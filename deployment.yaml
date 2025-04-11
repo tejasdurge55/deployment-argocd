@@ -20,7 +20,7 @@ spec:
     
       containers:
       - name: node-dice-jenkins
-        image: tejasdurge55/java-maven-webapp:e6397df
+        image: tejasdurge55/java-maven-webapp:554d2c6
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
