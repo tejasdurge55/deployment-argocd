@@ -20,10 +20,10 @@ spec:
     
       containers:
       - name: node-dice-jenkins
-        image: tejasdurge55/node-dice-jenkins
+        image: tejasdurge55/java-maven-webapp
         imagePullPolicy: Always
         ports:
-          - containerPort: 3000
+          - containerPort: 8080
 
 
 
@@ -37,7 +37,7 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 3000
+    targetPort: 8080
     nodePort: 32000
   selector:
     name: blog  # Selector for pods
