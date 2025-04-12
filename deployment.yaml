@@ -8,7 +8,7 @@ metadata:
   name: blog
   namespace: default  
 spec:
-  replicas: 5  # 5 replicas of Nginx
+  replicas: 2  # 5 replicas of Nginx
   selector:
     matchLabels:
       name: blog
